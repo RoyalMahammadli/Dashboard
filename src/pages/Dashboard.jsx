@@ -1,6 +1,6 @@
 import React from 'react'
 import './Dashboard.css'
-import MyAnchor from '../Components/UI/MyAnchor'
+import MyTab from '../Components/UI/MyTab'
 
 function Dashboard() {
   return (
@@ -9,7 +9,7 @@ function Dashboard() {
         <h1>Dashboard</h1>
       </header>
       <main>
-        <MyAnchor />
+        <MyTab />
       </main>
     </div>
   )
