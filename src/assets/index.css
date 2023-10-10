@@ -6,3 +6,7 @@
   box-sizing: border-box;
   outline: none;
 }
+main {
+  background-color: whitesmoke;
+  width: 100%;
+}

@@ -4,9 +4,11 @@ import Routing from '../Routing/Routing'
 
 function MainLayout() {
     return (
-        <div>
+        <div style={{ display: 'flex' }}>
             <Sidebar />
-            <Routing />
+            <main>
+                <Routing />
+            </main>
         </div>
     )
 }

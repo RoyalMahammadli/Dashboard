@@ -1,7 +1,22 @@
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.logo img{
+    width: 45px;
+}
+.logo h3{
+    width: 50%;
+    text-transform: capitalize;
+    color:  rgb(9, 56, 128);
+}
 .side{
     height: 100vh;
-    float: left;
+ 
+    border-right: 1px solid rgba(128, 128, 128, 0.336);
+
 }
-.ant-layout .ant-layout-sider{
-    background-color: white;
-}
+/* .ant-layout .ant-layout-sider{
+
+} */
