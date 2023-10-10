@@ -1,0 +1,7 @@
+.side{
+    height: 100vh;
+    float: left;
+}
+.ant-layout .ant-layout-sider{
+    background-color: white;
+}
