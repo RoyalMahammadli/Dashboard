@@ -7,6 +7,14 @@
   padding: 1rem;
   border-radius: 7px;
 }
+.right h2{
+  color:  rgb(9, 56, 128);
+}
+.occupancy h4,.increas_occupancy{
+  color:  rgb(9, 56, 128);
+  font-size: 1rem;
+}
+
 .V-details,
 .numb-Details {
   background-color: rgb(236, 236, 236);
@@ -18,8 +26,15 @@
 .numb-Details {
   padding: 5px 15px;
 }
+.numb-Details span{
+  color: rgb(9, 56, 128) ;
+  font-weight: bolder;
+}
 h4 {
   margin-top: 1rem;
+}
+.increas_occupancy p{
+  font-weight: 500;
 }
 .guide1,
 .guide2 {
@@ -30,12 +45,19 @@ h4 {
   padding-bottom: .8rem;
   border-bottom: 1px solid rgba(128, 128, 128, 0.384);
 }
+
 .not-met {
   background-color: rgb(252, 238, 238);
   padding: 2px 5px;
   text-align: center;
   border-radius: 7px;
   color: rgba(189, 9, 9, 0.945);
+  transition: .4s all;
+  cursor: pointer;
+}
+.not-met:hover{
+color: red;
+background-color: whitesmoke;
 }
 .met {
   background-color: rgb(177, 236, 177);
@@ -43,7 +65,13 @@ h4 {
   text-align: center;
   border-radius: 7px;
   color: green;
+  transition: .4s all;
+  cursor: pointer;
 }
+.met:hover{
+  color: green;
+  background-color: whitesmoke;
+  }
 .rates .box {
   display: flex;
   justify-content: center;
@@ -54,9 +82,18 @@ h4 {
   height: 40px;
   cursor: pointer;
 }
+.rates .box:hover .icon{
+  color: rgb(9, 57, 128) ;
+}
 .rates .text{
   margin-left: 1.5rem;
 }
+.rates .text h5{
+  color: rgb(9, 56, 128);
+  font-size: .9rem;
+  font-weight: 500;
+}
+
 .infection,
 .satisfaction,
 .vaccination,
@@ -64,4 +101,10 @@ h4 {
   display: flex;
   margin-top: 1rem;
   width: 270px;
+}
+.icon{
+  color: rgba(9, 57, 128, 0.479);
+  font-size: 1.4rem;
+  transition: .4s all;
+
 }

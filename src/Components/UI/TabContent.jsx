@@ -5,15 +5,21 @@ import { QuestionCircleOutlined, SmileOutlined, AndroidOutlined, ApiOutlined, Dr
 function TabContent() {
     return (
         <div className='mainTab'>
-            <div className="left"></div>
+
+            {/* lEFT SIDE      */}
+            <div className="left">
+
+            </div>
+
+            {/* RIGHT SIDE */}
             <div className="right">
                 <div style={{ display: 'flex', justifyContent: "space-between", alignItems: "center", marginBottom: '1rem' }}>
                     <h2>Dallas office</h2>
                     <div className='V-details'><p>Viev details</p></div>
                 </div>
                 <div className='numb-Details'>
-                    <p>40 shared desks + 39 private offices</p>
-                    <p> Maximum capacity:96 people</p>
+                    <p><span>40</span> shared desks + <span>39</span> private offices</p>
+                    <p> Maximum capacity: <span>96 people</span> </p>
                 </div>
                 <div className="occupancy">
                     <h4>Current office occupancy:</h4>
@@ -39,31 +45,31 @@ function TabContent() {
                 </div>
                 <div className="rates">
                     <div className="infection">
-                        <div className="box"><AndroidOutlined style={{ fontSize: '1.4rem', color: 'blue' }} /></div>
+                        <div className="box"><AndroidOutlined className='icon' /></div>
                         <div className="text">
                             <h5>Estimated office infection rate:</h5>
-                            <p>0.3%(low)</p>
+                            <p style={{ color: 'green', fontWeight: '700' }}>0.3%(low)</p>
                         </div>
                     </div>
                     <div className="satisfaction">
-                        <div className="box"><SmileOutlined style={{ fontSize: '1.4rem', color: 'blue' }} /></div>
+                        <div className="box"><SmileOutlined className='icon' /></div>
                         <div className="text">
-                        <h5>Employee satisfaction rate:</h5>
-                            <p>65%(high)</p>
+                            <h5>Employee satisfaction rate:</h5>
+                            <p style={{ color: 'green', fontWeight: '700' }}>65%(high)</p>
                         </div>
                     </div>
                     <div className="vaccination">
-                        <div className="box"><ApiOutlined style={{ fontSize: '1.4rem', color: 'blue' }} /></div>
+                        <div className="box"><ApiOutlined className='icon' /></div>
                         <div className="text">
-                        <h5>Employee vaccination rate:</h5>
-                            <p>10%</p>
+                            <h5>Employee vaccination rate:</h5>
+                            <p style={{ color: ' rgb(14, 148, 236)', fontWeight: '700' }}>10%</p>
                         </div>
                     </div>
                     <div className="compliance">
-                        <div className="box"><DribbbleOutlined style={{ fontSize: '1.4rem', color: 'blue' }} /></div>
+                        <div className="box"><DribbbleOutlined className='icon' /></div>
                         <div className="text">
-                        <h5>Mask compliance:</h5>
-                            <p>No</p>
+                            <h5>Mask compliance:</h5>
+                            <p style={{ color: ' rgb(14, 148, 236)', fontWeight: '700' }}>No</p>
                         </div>
                     </div>
                 </div>
