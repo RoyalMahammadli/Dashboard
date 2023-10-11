@@ -1,9 +1,10 @@
 
 import React from 'react';
 import { Tabs } from 'antd';
+import TabContent from './TabContent';
 
 const MyTab = () => {
-    const items = [
+    const Tabitems = [
         {
             key: '1',
             tab: 'Dallas Office',
@@ -22,10 +23,10 @@ const MyTab = () => {
     ];
     return (
         <Tabs >
-            {items.map((item) => {
+            {Tabitems.map((item) => {
                 return (
-                    <Tabs.TabPane  tab={item.tab} key={item.key} >
-                        <div id={item.href}>Salam {item.tab}</div>
+                    <Tabs.TabPane tab={item.tab} key={item.key} >
+                        <TabContent  />
                     </Tabs.TabPane>
                 )
 

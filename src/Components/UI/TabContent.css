@@ -1,0 +1,67 @@
+.mainTab {
+  display: flex;
+  justify-content: space-between;
+}
+.right {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 7px;
+}
+.V-details,
+.numb-Details {
+  background-color: rgb(236, 236, 236);
+  border-radius: 7px;
+  color: rgb(15, 111, 189);
+  padding: 5px;
+  cursor: pointer;
+}
+.numb-Details {
+  padding: 5px 15px;
+}
+h4 {
+  margin-top: 1rem;
+}
+.guide1,
+.guide2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .5rem;
+  padding-bottom: .8rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.384);
+}
+.not-met {
+  background-color: rgb(252, 238, 238);
+  padding: 2px 5px;
+  text-align: center;
+  border-radius: 7px;
+  color: rgba(189, 9, 9, 0.945);
+}
+.met {
+  background-color: rgb(177, 236, 177);
+  padding: 2px 5px;
+  text-align: center;
+  border-radius: 7px;
+  color: green;
+}
+.rates .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgb(236, 236, 236);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.rates .text{
+  margin-left: 1.5rem;
+}
+.infection,
+.satisfaction,
+.vaccination,
+.compliance {
+  display: flex;
+  margin-top: 1rem;
+  width: 270px;
+}

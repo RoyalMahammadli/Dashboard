@@ -5,8 +5,6 @@ import {
     StockOutlined,
     DatabaseOutlined,
     TeamOutlined
-
-
 } from '@ant-design/icons';
 import { Layout, Menu, theme } from 'antd';
 import { useNavigate } from 'react-router-dom';
@@ -38,29 +36,25 @@ function Sidebar() {
                 defaultSelectedKeys={['1']}
                 items={[
                     {
-                        key: '1',
+                        key: '/',
                         icon: <AppstoreOutlined />,
                         label: 'Dashboard',
-                        key: '/'
                     },
                     {
-                        key: '2',
+                        key: '/forecast',
                         icon: <StockOutlined />,
                         label: 'Forecast',
-                        key: '/forecast'
                     },
                     {
-                        key: '3',
+                        key: '/allofices',
                         icon: <DatabaseOutlined />,
                         label: 'All ofices',
-                        key: '/allofices'
 
                     },
                     {
-                        key: '4',
+                        key: '/employees',
                         icon: <TeamOutlined />,
                         label: 'Employees',
-                        key: '/employees'
 
                     }
                 ]}
