@@ -1,21 +1,30 @@
-
-/* .right{
+.right{
   width: 34%;
 }
 .left{
   width: 64%;
-} */
-.right, .left {
+}
+.right,
+.left {
   background-color: white;
   padding: 1rem;
   border-radius: 7px;
 }
-.right h2,.left h2{
-  color:  rgb(9, 56, 128);
+.right h2,
+.left h2 {
+  color: rgb(9, 56, 128);
 }
-.occupancy h4,.increas_occupancy,.left h4{
-  color:  rgb(9, 56, 128);
+.occupancy h4,
+.increas_occupancy,
+.left h4 {
+  color: rgb(9, 56, 128);
   font-size: 1rem;
+}
+input {
+  width: 30px;
+  padding: 0 5px;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.288);
 }
 
 .V-details,
@@ -29,14 +38,14 @@
 .numb-Details {
   padding: 5px 15px;
 }
-.numb-Details span{
-  color: rgb(9, 56, 128) ;
+.numb-Details span {
+  color: rgb(9, 56, 128);
   font-weight: bolder;
 }
 h4 {
   margin-top: 1rem;
 }
-.increas_occupancy p{
+.increas_occupancy p {
   font-weight: 500;
 }
 .guide1,
@@ -58,9 +67,9 @@ h4 {
   transition: .4s all;
   cursor: pointer;
 }
-.not-met:hover{
-color: red;
-background-color: whitesmoke;
+.not-met:hover {
+  color: red;
+  background-color: whitesmoke;
 }
 .met {
   background-color: rgb(177, 236, 177);
@@ -71,10 +80,10 @@ background-color: whitesmoke;
   transition: .4s all;
   cursor: pointer;
 }
-.met:hover{
+.met:hover {
   color: green;
   background-color: whitesmoke;
-  }
+}
 .rates .box {
   display: flex;
   justify-content: center;
@@ -85,13 +94,13 @@ background-color: whitesmoke;
   height: 40px;
   cursor: pointer;
 }
-.rates .box:hover .icon{
-  color: rgb(9, 57, 128) ;
+.rates .box:hover .icon {
+  color: rgb(9, 57, 128);
 }
-.rates .text{
+.rates .text {
   margin-left: 1.5rem;
 }
-.rates .text h5{
+.rates .text h5 {
   color: rgb(9, 56, 128);
   font-size: .9rem;
   font-weight: 500;
@@ -105,9 +114,8 @@ background-color: whitesmoke;
   margin-top: 1rem;
   width: 270px;
 }
-.icon{
+.icon {
   color: rgba(9, 57, 128, 0.479);
   font-size: 1.4rem;
   transition: .4s all;
-
 }

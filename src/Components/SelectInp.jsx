@@ -14,6 +14,7 @@ function SelectInp() {
       style={{
         width: 120,
         color:'blue',
+        marginLeft:'.5rem'
       }}
       onChange={handleChange}
       options={[

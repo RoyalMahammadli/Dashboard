@@ -3,6 +3,7 @@ import './TabContent.css'
 import ProgresScale from '../ProgresScale'
 import { QuestionCircleOutlined, SmileOutlined, AndroidOutlined, ApiOutlined, DribbbleOutlined } from '@ant-design/icons';
 import SelectInp from '../SelectInp';
+import CircleProgres from '../CircleProgres';
 function TabContent() {
     return (
         <div className='mainTab flex'>
@@ -13,14 +14,15 @@ function TabContent() {
                 <h4>Currently recommended occupancy:</h4>
                 <ProgresScale />
                 <div className="ocuppancy-targets">
-                    <div className='flex' style={{alignItems:'center'}}>
+                    <div className='flex' style={{ alignItems: 'center' }}>
                         <h4>Occupancy targets:</h4>
                         <div className='flex'>
-                            <input type="number" name="" id="numb" />
+                            <input type="tel" name="" id="numb" value={75} />
                             <SelectInp />
                         </div>
 
                     </div>
+                    <CircleProgres />
                 </div>
 
             </div>
