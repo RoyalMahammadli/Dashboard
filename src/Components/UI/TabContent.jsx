@@ -1,9 +1,10 @@
 import React from 'react'
 import './TabContent.css'
-import ProgresScale from '../ProgresScale'
+
 import { QuestionCircleOutlined, SmileOutlined, AndroidOutlined, ApiOutlined, DribbbleOutlined } from '@ant-design/icons';
 import SelectInp from '../SelectInp';
 import CircleProgres from '../CircleProgres';
+import ProgresScale from './ProgresScale';
 function TabContent() {
     return (
         <div className='mainTab flex'>
