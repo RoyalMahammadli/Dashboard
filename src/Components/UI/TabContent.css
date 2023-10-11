@@ -1,16 +1,19 @@
-.mainTab {
-  display: flex;
-  justify-content: space-between;
+
+/* .right{
+  width: 34%;
 }
-.right {
+.left{
+  width: 64%;
+} */
+.right, .left {
   background-color: white;
   padding: 1rem;
   border-radius: 7px;
 }
-.right h2{
+.right h2,.left h2{
   color:  rgb(9, 56, 128);
 }
-.occupancy h4,.increas_occupancy{
+.occupancy h4,.increas_occupancy,.left h4{
   color:  rgb(9, 56, 128);
   font-size: 1rem;
 }

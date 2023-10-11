@@ -1,8 +1,9 @@
-import React from 'react'
-
+import { Empty } from 'antd';
 function AllOfices() {
   return (
-    <div>AllOfices</div>
+    <div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'90vh'}}>
+      <Empty />;
+    </div>
   )
 }
 

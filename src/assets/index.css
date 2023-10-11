@@ -11,3 +11,7 @@ main {
   width: 100%;
   padding: 1rem;
 }
+.flex{
+  display: flex;
+  justify-content: space-between;
+}

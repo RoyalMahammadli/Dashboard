@@ -1,13 +1,27 @@
 import React from 'react'
 import './TabContent.css'
-import ProgresScale from './ProgresScale'
+import ProgresScale from '../ProgresScale'
 import { QuestionCircleOutlined, SmileOutlined, AndroidOutlined, ApiOutlined, DribbbleOutlined } from '@ant-design/icons';
+import SelectInp from '../SelectInp';
 function TabContent() {
     return (
-        <div className='mainTab'>
+        <div className='mainTab flex'>
 
             {/* lEFT SIDE      */}
             <div className="left">
+                <h2>Forecast & recommendations</h2>
+                <h4>Currently recommended occupancy:</h4>
+                <ProgresScale />
+                <div className="ocuppancy-targets">
+                    <div className='flex' style={{alignItems:'center'}}>
+                        <h4>Occupancy targets:</h4>
+                        <div className='flex'>
+                            <input type="number" name="" id="numb" />
+                            <SelectInp />
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
 
