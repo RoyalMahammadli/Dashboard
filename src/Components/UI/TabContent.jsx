@@ -4,7 +4,7 @@ import './TabContent.css'
 import { QuestionCircleOutlined, SmileOutlined, AndroidOutlined, ApiOutlined, DribbbleOutlined } from '@ant-design/icons';
 import SelectInp from '../SelectInp';
 import CircleProgres from '../CircleProgres';
-import ProgresScale from './ProgresScale';
+import ProgresScale from '../ProgresScale';
 import SliderScale from './SliderScale';
 function TabContent() {
     return (

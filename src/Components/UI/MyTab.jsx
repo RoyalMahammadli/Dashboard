@@ -1,9 +1,11 @@
 
-import React from 'react';
+import React, { useContext } from 'react';
 import { Tabs } from 'antd';
 import TabContent from './TabContent';
+import Context from '../../Context/Context';
 
 const MyTab = () => {
+    const { content } = useContext(Context)
     const Tabitems = [
         {
             key: '1',
@@ -26,7 +28,7 @@ const MyTab = () => {
             {Tabitems.map((item) => {
                 return (
                     <Tabs.TabPane tab={item.tab} key={item.key} >
-                        <TabContent  />
+                        <TabContent />
                     </Tabs.TabPane>
                 )
 
