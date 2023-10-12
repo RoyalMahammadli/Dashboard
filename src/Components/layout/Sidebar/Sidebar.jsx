@@ -6,8 +6,11 @@ import {
     DatabaseOutlined,
     TeamOutlined
 } from '@ant-design/icons';
-import { Layout, Menu, theme } from 'antd';
+import { Layout, Menu, theme, Avatar, Space, Dropdown } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import { UserOutlined, DownOutlined } from '@ant-design/icons';
+
+
 const { Sider } = Layout;
 
 
@@ -59,6 +62,32 @@ function Sidebar() {
                     }
                 ]}
             />
+
+
+
+            <div className="profile">
+                <Space direction="vertical" size={16}>
+                    <Space wrap size={16}>
+                        <Avatar size="small" icon={<UserOutlined />} />
+                    </Space>
+
+                </Space>
+                <Dropdown
+                    menu={{
+                        items,
+                    }}
+                    trigger={['click']}
+                >
+                    <a onClick={(e) => e.preventDefault()}>
+                        <Space style={{
+                            cursor:'pointer'
+                        }}>
+                            <p>My profile</p>
+                            <DownOutlined />
+                        </Space>
+                    </a>
+                </Dropdown>
+            </div>
         </Sider>
 
     );
@@ -67,4 +96,27 @@ function Sidebar() {
 }
 
 export default Sidebar
+
+
+
+
+const items = [
+    {
+        label: <a href="https://www.antgroup.com">1st menu item</a>,
+        key: '0',
+    },
+    {
+        label: <a href="https://www.aliyun.com">2nd menu item</a>,
+        key: '1',
+    },
+    {
+        type: 'divider',
+    },
+    {
+        label: '3rd menu item',
+        key: '3',
+    },
+];
+
+
 
