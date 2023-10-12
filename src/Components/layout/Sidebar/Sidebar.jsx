@@ -80,7 +80,7 @@ function Sidebar() {
                 >
                     <a onClick={(e) => e.preventDefault()}>
                         <Space style={{
-                            cursor:'pointer'
+                            cursor: 'pointer'
                         }}>
                             <p>My profile</p>
                             <DownOutlined />
@@ -102,11 +102,11 @@ export default Sidebar
 
 const items = [
     {
-        label: <a href="https://www.antgroup.com">1st menu item</a>,
+        label: <a target='_blank' href="https://www.instagram.com">My instagram profile</a>,
         key: '0',
     },
     {
-        label: <a href="https://www.aliyun.com">2nd menu item</a>,
+        label: <a target='_blank' href="https://www.linkedin.com">My linkedin profile</a>,
         key: '1',
     },
     {
