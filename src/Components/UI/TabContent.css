@@ -1,7 +1,5 @@
-.right{
-  width: 34%;
-}
-.left{
+/* Left Side */
+.left {
   width: 64%;
 }
 .right,
@@ -14,17 +12,39 @@
 .left h2 {
   color: rgb(9, 56, 128);
 }
+.vaccination-and-mask {
+  margin-top: 2rem;
+}
+.employes-vaccinated{
+  margin-top: 1rem;
+}
+.employes-vaccinated h3, .employes-vaccinated p {
+  color: rgba(0, 0, 0, 0.438);
+}
+
+/* Right side */
+.right {
+  width: 34%;
+}
 .occupancy h4,
 .increas_occupancy,
 .left h4 {
   color: rgb(9, 56, 128);
   font-size: 1rem;
 }
+
+.vaccination-and-mask h4 {
+  color: rgb(9, 56, 128);
+  font-size: .9rem;
+}
+
 input {
   width: 30px;
+  height: 100%;
   padding: 0 5px;
   border-radius: 7px;
   border: 1px solid rgba(0, 0, 0, 0.288);
+  cursor: pointer;
 }
 
 .V-details,
@@ -42,7 +62,7 @@ input {
   color: rgb(9, 56, 128);
   font-weight: bolder;
 }
-h4 {
+.right h4 {
   margin-top: 1rem;
 }
 .increas_occupancy p {

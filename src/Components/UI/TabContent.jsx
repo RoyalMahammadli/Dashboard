@@ -5,6 +5,7 @@ import { QuestionCircleOutlined, SmileOutlined, AndroidOutlined, ApiOutlined, Dr
 import SelectInp from '../SelectInp';
 import CircleProgres from '../CircleProgres';
 import ProgresScale from './ProgresScale';
+import SliderScale from './SliderScale';
 function TabContent() {
     return (
         <div className='mainTab flex'>
@@ -18,13 +19,34 @@ function TabContent() {
                     <div className='flex' style={{ alignItems: 'center' }}>
                         <h4>Occupancy targets:</h4>
                         <div className='flex'>
-                            <input type="tel" name="" id="numb" value={75} />
+                            <form action="">
+                                <input type="tel" name="" id="numb" value={75} />
+                            </form>
                             <SelectInp />
                         </div>
 
                     </div>
                     <CircleProgres />
                 </div>
+                <div className="vaccination-and-mask">
+                    <h4>Maximum recommended ocuppancy for vaccination rate and mask compliance rate:</h4>
+                    <div className="employes-vaccinated flex">
+                        <h3>Employees vaccinated:</h3>
+                        <p>38% (34people)</p>
+                    </div>
+                    <SliderScale />
+                    <p style={{ fontSize: '.7rem', color: ' rgb(14, 148, 236) ' }}>Current vaccination rate:10% (9 people)</p>
+                    <div className="employes-vaccinated flex">
+                        <h3>Employees vaccinated:</h3>
+                        <p>38% (34people)</p>
+                    </div>
+                    <SliderScale />
+
+                </div>
+                <div className='numb-Details' style={{marginTop:'1rem'}}>
+                    <p>Current recommended occupancy would be<span> 47% (45 people)</span> if your vaccination rate was  &nbsp; <span>38</span> and your mask compliance rate was <span>30%</span></p>
+                </div>
+
 
             </div>
 
