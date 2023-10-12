@@ -2,10 +2,12 @@ import { createContext, useState } from "react";
 import { contentInner } from "../data/TabcontentInner";
 
 
-const [content, setContent] = useState(contentInner)
 export const ContextProvider = ({ children }) => {
 
-    const obj = { content, setContent }
+    const [content, setContent] = useState(contentInner)
+    const [activeTabData, setActiveTabData] = useState({})
+
+    const obj = { content, setContent, activeTabData, setActiveTabData }
     return (
         <Context.Provider value={obj} >
             {children}

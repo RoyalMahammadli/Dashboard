@@ -5,30 +5,18 @@ import TabContent from './TabContent';
 import Context from '../../Context/Context';
 
 const MyTab = () => {
-    const { content } = useContext(Context)
-    const Tabitems = [
-        {
-            key: '1',
-            tab: 'Dallas Office',
-            href: '#dallas'
-        },
-        {
-            key: '2',
-            tab: 'Coppel Office',
-            href: '#coppel'
-        },
-        {
-            key: '3',
-            tab: 'Loss Angeles Office',
-            href: '#angeles'
-        },
-    ];
+    const { content, activeTabData, setActiveTabData } = useContext(Context)
+    const changeTab = (argumentId) => {
+        const findElement = content.find(item => item.id == argumentId)
+        setActiveTabData(findElement)
+    }
+
     return (
-        <Tabs >
-            {Tabitems.map((item) => {
+        <Tabs  >
+            {content.map((item) => {
                 return (
-                    <Tabs.TabPane tab={item.tab} key={item.key} >
-                        <TabContent />
+                    <Tabs.TabPane active={activeTabData} onClick={() => changeTab(item.id)} tab={item.office} key={item.id} >
+                        <TabContent {...item} />
                     </Tabs.TabPane>
                 )
 
