@@ -5,7 +5,7 @@ import { QuestionCircleOutlined, SmileOutlined, AndroidOutlined, ApiOutlined, Dr
 import SelectInp from '../SelectInp';
 import CircleProgres from '../CircleProgres';
 import ProgresScale from '../ProgresScale';
-import SliderScale from './SliderScale';
+import SliderScale from '../SliderScale';
 import ProgresScale1 from '../ProgresScale1';
 function TabContent({ countryStateGuid, havenGuidelines, office, circleProgresValue, occupancyTarget, infectionRate, satisfactionRate, employeVacsinationRate, maskCompliance, recommOccupancy, recommOccupancyPercent, sharedDesk, privateOffice, maxCapacity, weeks, officeOccupancyPercent, officeOccupancy, employeesVaccinated }) {
 
@@ -40,7 +40,7 @@ function TabContent({ countryStateGuid, havenGuidelines, office, circleProgresVa
                     <p style={{ fontSize: '.7rem', color: ' rgb(14, 148, 236) ' }}>Current vaccination rate:10% ({employeVacsinationRate} people)</p>
                     <div className="employes-vaccinated flex">
                         <h3>Employees vaccinated:</h3>
-                        <p>38% ({employeVacsinationRate }people)</p>
+                        <p>38% ({employeVacsinationRate}people)</p>
                     </div>
                     <SliderScale />
 
